@@ -42,3 +42,7 @@ From another terminal while container is running
 
 `docker ps` - to find container ID
 `docker commit -m 'comment' [container ID] vladdsm/docker-r-studio
+
+### Tag the image to keep versions
+
+e.g.: `docker tag vladdsm/docker-r-studio vladdsm/docker-r-studio:Version1.0`
