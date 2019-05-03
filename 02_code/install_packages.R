@@ -12,6 +12,7 @@ install.packages("twitteR")
 install.packages("syuzhet")
 install.packages("scales")
 install.packages("reshape2")
+install.packages("gapminder")
 
 # The following two commands remove any previously installed H2O packages for R.
 if ("package:h2o" %in% search()) { detach("package:h2o", unload=TRUE) }
