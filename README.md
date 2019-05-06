@@ -42,6 +42,7 @@ From another terminal while container is running
 
 `docker ps` - to find container ID
 `docker commit -m 'comment' [container ID] vladdsm/docker-r-studio
+`docker exec -it [container ID ] bash` to use bash in the running container
 
 ### Tag the image to keep versions
 
