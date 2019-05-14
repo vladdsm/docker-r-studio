@@ -2,7 +2,7 @@
 
 FROM rocker/verse:latest
 
-LABEL maintainer='Vladimir Zhbanko' vladimir.zhbanko@gmail.com
+LABEL maintainer='vladimir.zhbanko@gmail.com'
 
 ## create directories
 RUN mkdir -p /01_data
