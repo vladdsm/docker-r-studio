@@ -1,3 +1,5 @@
+![](https://img.shields.io/docker/build/vladdsm/docker-r-studio.svg)
+
 # docker-r-studio
 
 ## Description
