@@ -17,6 +17,7 @@ install.packages("plumber")
 install.packages("DT")
 install.packages("shinyjs")
 install.packages("V8")
+devtools::install_github("smilesun/rlR")
 
 
 # The following two commands remove any previously installed H2O packages for R.
