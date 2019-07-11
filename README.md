@@ -2,6 +2,10 @@
 
 # docker-r-studio
 
+## News
+
+Update to new R version
+
 ## Description
 
 To allow usage of R-Studio in a portable way using Docker Container
