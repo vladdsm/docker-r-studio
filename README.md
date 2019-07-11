@@ -1,4 +1,4 @@
-![Docker Build Status](https://img.shields.io/docker/build/vladdsm/docker-r-studio.svg)
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/vladdsm/docker-r-studio.svg)
 
 # docker-r-studio
 
