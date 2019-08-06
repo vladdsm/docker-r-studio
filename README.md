@@ -20,8 +20,8 @@ To allow usage of R-Studio in a portable way using Docker Container
 
 ### Run Container
 
-# !! make sure to use your own [strong] passwords
-# Create dedicated executable file and map specific directory e.g. RunRStudio
+#### !! make sure to use your own [strong] passwords
+#### Create dedicated executable file and map specific directory e.g. RunRStudio
 `docker run --rm -p 8787:8787 -e USER=myself -e PASSWORD=guest -v /Users/vladdsm/R_Studio_Shared:/home/myself/r-studio vladdsm/docker-r-studio`
 
 ### Stop Container
