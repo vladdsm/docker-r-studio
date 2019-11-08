@@ -24,6 +24,12 @@ To allow usage of R-Studio in a portable way using Docker Container
 #### Create dedicated executable file and map specific directory e.g. RunRStudio
 `docker run --rm -p 8787:8787 -e USER=myself -e PASSWORD=guest -v /Users/vladdsm/R_Studio_Shared:/home/myself/r-studio vladdsm/docker-r-studio`
 
+### Run R studio in the browser
+
+Type in the browser:
+
+`http://localhost:8787`, once prompted add your username and password...
+
 ### Stop Container
 
 `CTRL + C`
