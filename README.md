@@ -5,7 +5,7 @@
 
 ## News
 
-Update to new R version 3.6.1
+Update list of packages
 
 ## Description
 

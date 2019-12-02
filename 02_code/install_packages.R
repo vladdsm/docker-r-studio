@@ -1,5 +1,6 @@
 # code to install packages in the docker file
-install.packages("tidyverse")
+install.packages("dplyr")
+# install.packages("tidyverse") #check if it is already there...
 install.packages("lubridate")
 install.packages("ReinforcementLearning")
 install.packages("magrittr")
