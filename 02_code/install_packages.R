@@ -1,6 +1,5 @@
 # code to install packages in the docker file
 install.packages("dplyr")
-# install.packages("tidyverse") #check if it is already there...
 install.packages("lubridate")
 install.packages("ReinforcementLearning")
 install.packages("magrittr")
@@ -19,6 +18,7 @@ install.packages("DT")
 install.packages("shinyjs")
 install.packages("V8")
 install.packages("lazytrade")
+install.packages("translateR")
 
 # The following two commands remove any previously installed H2O packages for R.
 if ("package:h2o" %in% search()) { detach("package:h2o", unload=TRUE) }
