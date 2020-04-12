@@ -5,7 +5,7 @@
 
 ## News
 
-Update to R version 3.6.3
+Update to R version 3.6.3, 2020-04-12
 
 ## Description
 
