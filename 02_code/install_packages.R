@@ -19,6 +19,8 @@ install.packages("shinyjs")
 install.packages("V8")
 install.packages("lazytrade")
 install.packages("translateR")
+install.packages("golem")
+
 
 # The following two commands remove any previously installed H2O packages for R.
 if ("package:h2o" %in% search()) { detach("package:h2o", unload=TRUE) }
