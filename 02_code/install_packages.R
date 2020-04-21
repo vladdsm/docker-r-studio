@@ -21,7 +21,7 @@ install.packages("lazytrade")
 install.packages("translateR")
 install.packages("golem")
 install.packages("cranlogs")
-
+install.packages("shinydashboard")
 
 # The following two commands remove any previously installed H2O packages for R.
 if ("package:h2o" %in% search()) { detach("package:h2o", unload=TRUE) }
