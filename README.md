@@ -5,7 +5,8 @@
 
 ## News
 
-Update to R version 3.6.3, 2020-04-12
+2020-04-19: Added `golem`, `cranlogs` packages, more elaborated readme file, 
+2020-04-12: Update to R version 3.6.3
 
 ## Description
 
@@ -15,20 +16,26 @@ To allow usage of R-Studio in a portable way using Docker Container
 
 ### Build the image
 
-`docker login` - to authenticate
-`docker build -t vladdsm/docker-r-studio .`
+* `docker build -t vladdsm/docker-r-studio .` - to build image
+* `docker login` - to authenticate
+* `docker push vladdsm/docker-r-studio` - to push image to docker hub.
 
 ### Run Container
 
-#### !! make sure to use your own [strong] passwords
+#### !! make sure to use your own [strong] passwords in case it will work in the server
+#### !! make sure to replace my computer name [vladdsm] with yours
+
 #### Create dedicated executable file and map specific directory e.g. RunRStudio
-`docker run --rm -p 8787:8787 -e USER=myself -e PASSWORD=guest -v /Users/vladdsm/R_Studio_Shared:/home/myself/r-studio vladdsm/docker-r-studio`
+
+`docker run --rm -p 8787:8787 -e USER=myself -e PASSWORD=guest -v /Users/vladdsm/R_Studio_Shared:/home/myself/projects vladdsm/docker-r-studio`
+
+Note: Create all your projects in the mapped local folder: e.g. `/Users/vladdsm/R_Studio_Shared`
 
 ### Run R studio in the browser
 
-Type in the browser:
-
-`http://localhost:8787`, once prompted add your username and password...
+* Access running container with the browser: `http://localhost:8787`, once prompted add your username and password...
+* Create new project inside folder 'projects'. 
+* All working projects will be synchronised to the local computer in the folder `/Users/vladdsm/R_Studio_Shared`
 
 ### Stop Container
 
@@ -56,9 +63,12 @@ Type in the browser:
 From another terminal while container is running
 
 `docker ps` - to find container ID
-`docker commit -m 'comment' [container ID] vladdsm/docker-r-studio
-`docker exec -it [container ID ] bash` to use bash in the running container
+`docker exec -it [container ID ] bash` to use bash in the running container and perform manipulations with container
+`docker commit -m 'comment' [container ID] vladdsm/docker-r-studio` to save changes
+
+Only use this procedure for troubleshooting purposes
 
 ### Tag the image to keep versions
 
-e.g.: `docker tag vladdsm/docker-r-studio vladdsm/docker-r-studio:Version1.0`
+`docker tag vladdsm/docker-r-studio vladdsm/docker-r-studio:Version1.0`
+`docker push vladdsm/docker-r-studio:Version1.0`

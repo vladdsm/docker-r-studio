@@ -20,6 +20,7 @@ install.packages("V8")
 install.packages("lazytrade")
 install.packages("translateR")
 install.packages("golem")
+install.packages("cranlogs")
 
 
 # The following two commands remove any previously installed H2O packages for R.
