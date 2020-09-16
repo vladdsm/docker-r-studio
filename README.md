@@ -5,6 +5,7 @@
 
 ## News
 
+2020-09-16: Update of the image
 2020-04-19: Added `golem`, `cranlogs` packages, more elaborated readme file, 
 2020-04-12: Update to R version 3.6.3
 
