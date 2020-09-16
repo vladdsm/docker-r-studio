@@ -73,3 +73,7 @@ Only use this procedure for troubleshooting purposes
 
 `docker tag vladdsm/docker-r-studio vladdsm/docker-r-studio:Version1.0`
 `docker push vladdsm/docker-r-studio:Version1.0`
+
+### Pull image from the Docker Hub
+
+`docker pull vladdsm/docker-r-studio`
