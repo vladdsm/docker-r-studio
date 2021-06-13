@@ -23,4 +23,5 @@ install.packages("translateR")
 install.packages("golem")
 install.packages("cranlogs")
 install.packages("shinydashboard")
+install.packages("covr")
 
